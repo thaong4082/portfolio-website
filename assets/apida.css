@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(font/Montserrat-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url(font/Karla-VariableFont_wght.ttf);
+}
+
+:root{
+    --primary-color: #8A2420;
+    --accent-color: #EFE2C5;
+    --accent-color-2: #272727;
+    --text-color: #F2EBE2;
+}
+
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    /* display: flex; */
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 135px;
+}
+
+.header span{
+    width: 979px;
+    position: relative;
+    font-size: 34px;
+    text-decoration: underline;
+    letter-spacing: 0.1em;
+    font-weight: 450;
+    font-family: Montserrat;
+    color: #efe2c5;
+    text-align: left;
+    display: inline-block;
+    height: 31px;
+}
+
+/* NIGHT MARKET */
+.night-market- {
+    font-weight: 600;
+}
+.night-market-container {
+    width: 1230px;
+    position: relative;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    color: var(--text-color);
+    text-align: left;
+    display: inline-block;
+    height: 112px;
+    font-family: Karla;
+    padding-top: 10px;
+    padding-left: 135px;
+}
+
+.NM_images-container {
+    display: flex;
+    align-items: center;
+}
+
+.NM_eboard {
+    width: 426px;
+    height: 306px;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    left: 220px;
+    top: 40px;
+    border: 3px solid var(--accent-color);
+}
+.NM_ppl {
+    width: 426px;
+    height: 306px;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    left: 350px;
+    top: 40px;
+    border: 3px solid var(--accent-color);
+}
+
+/* ASIAN GALA */
+.asian-gala- {
+    font-weight: 600;
+}
+.asian-gala-container {
+    width: 1230px;
+    position: relative;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    color: var(--text-color);
+    text-align: left;
+    display: inline-block;
+    height: 112px;
+    font-family: Karla;
+    padding-top: 120px;
+    padding-left: 135px;
+}
+
+.AG_images-container {
+    display: flex;
+    align-items: center;
+}
+
+.AG_eboard {
+    width: 426px;
+    height: 306px;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    left: 220px;
+    top: -10px;
+    border: 3px solid var(--accent-color);
+}
+.AG_ppl {
+    width: 426px;
+    height: 306px;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    left: 350px;
+    top: -10px;
+    border: 3px solid var(--accent-color);
+}
+
+
+
+/* APIDA General Body */
+.general- {
+    font-weight: 600;
+}
+.general-container {
+    width: 1230px;
+    position: relative;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    color: var(--text-color);
+    text-align: left;
+    display: inline-block;
+    font-family: Karla;
+    padding-top: 65px;
+    padding-left: 135px;
+}
+
+.general_images-container {
+    display: flex;
+    align-items: center;
+}
+
+.APIDA_ppl {
+    width: 426px;
+    height: 306px;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    left: 220px;
+    top: 50px;
+    border: 3px solid var(--accent-color);
+}
+.APIDA_cook {
+    width: 426px;
+    height: 306px;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    left: 350px;
+    top: 50px;
+    border: 3px solid var(--accent-color);
+}
+
+svg{
+    fill:var(--accent-color);
+    width: 55px;
+    stroke: var(--accent-color);
+    stroke-width: 2px;
+    position: relative;
+    top: 50px;
+    right: -60px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+svg:hover {
+    filter: drop-shadow(0 0 10px var(--accent-color));
+  }

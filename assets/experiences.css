@@ -1,0 +1,363 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(font/Montserrat-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url(font/Karla-VariableFont_wght.ttf);
+}
+
+:root{
+    --primary-color:#272727; 
+    --accent-color: #EFE2C5;
+    --accent-color-2: #8A2420;
+    --text-color: #F2EBE2;
+    --halo-color: #ff0a00;
+    --box-dark-color: #1E1E1E;
+    --box-border-color: #8A2420;
+}
+
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    padding-left: 135px;
+    padding-right: 105px;
+}
+
+.header {
+    /* display: flex; */
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.header span{
+    color: var(--accent-color);
+    font-family: Montserrat;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 4.8px;
+}
+
+.prof-exp {
+    width: 551px;
+    position: relative;
+    font-size: 36px;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    font-family: Montserrat;
+    color: var(--text-color);
+    text-align: left;
+    height: 45px;
+    padding-top: 35px;
+    text-shadow: 0px 4px 30px var(--halo-color);
+}
+
+/* MOZILLA */
+.mozilla-header{
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.mozilla-title {
+    width: 600px;
+    position: relative;
+    font-size: 26px;
+    text-decoration: underline;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-family: Montserrat;
+    color: var(--text-color);
+    text-align: left;
+    display: inline-block;
+    height: 31px;
+}
+
+.m-text{
+    margin: 0;
+}
+.mozilla-container {
+    width: 1230px;
+    position: relative;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    line-height: 35px;
+    text-align: left;
+    display: inline-block;
+    height: 139px;
+    color: var(--text-color);
+    font-family: Karla;
+    padding-top: 10px;
+}
+
+.mozilla-links {
+    width: 100%;
+    text-align: left;
+    font-size: 24px;
+    color: var(--text-color);
+    font-family: Karla;
+}
+
+.mozilla-links a {
+    position: relative;
+    display: block;
+    margin: 50px 0;
+    letter-spacing: 0.1em;
+    /* font-weight: 600; */
+    font-style: italic;
+    color: var(--text-color);
+    z-index: 1;
+}
+
+.analysis-link::before {
+    content: '';
+    position: absolute;
+    width: 1277px;
+    height: 61px;
+    left: -25px;
+    top: -15px;
+    background-color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 15px;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's size */
+    z-index: -1;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.analysis-link:hover::before {
+    background-color: var(--box-dark-color); /* Background color change on hover */
+    border-color: var(--box-border-color); /* Border color change on hover */
+}
+
+.critical-link::before {
+    content: '';
+    position: absolute;
+    width: 1277px;
+    height: 88px;
+    left: -25px;
+    top: -15px;
+    background-color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 15px;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's size */
+    z-index: -1;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.critical-link:hover::before {
+    background-color: var(--box-dark-color); /* Background color change on hover */
+    border-color: var(--box-border-color); /* Border color change on hover */
+}
+
+/* CELLPHONES & CINEMA */
+.cellphone-header{
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.cellphone-title {
+    width: 900px;
+    position: relative;
+    font-size: 26px;
+    text-decoration: underline;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-family: Montserrat;
+    color: var(--text-color);
+    text-align: left;
+    display: block;
+    /* height: 31px; */
+}
+
+.cellphone-text{
+    margin: 0;
+}
+.cellphone-container {
+    width: 1230px;
+    position: relative;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    line-height: 35px;
+    text-align: left;
+    display: inline-block;
+    height: 139px;
+    color: var(--text-color);
+    font-family: Karla;
+    padding-top: 10px;
+}
+
+.cellphone-links {
+    width: 100%;
+    text-align: left;
+    font-size: 24px;
+    color: var(--text-color);
+    font-family: Karla;
+}
+
+.cellphone-links a {
+    position: relative;
+    display: block;
+    margin: 50px 0;
+    letter-spacing: 0.1em;
+    /* font-weight: 600; */
+    font-style: italic;
+    color: var(--text-color);
+    z-index: 1;
+}
+
+.tedtalk-link::before {
+    content: '';
+    position: absolute;
+    width: 1277px;
+    height: 61px;
+    left: -25px;
+    top: -15px;
+    background-color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 15px;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's size */
+    z-index: -1;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.tedtalk-link:hover::before {
+    background-color: var(--box-dark-color); /* Background color change on hover */
+    border-color: var(--box-border-color); /* Border color change on hover */
+}
+
+.norwegian-link::before {
+    content: '';
+    position: absolute;
+    width: 1277px;
+    height: 61px;
+    left: -25px;
+    top: -15px;
+    background-color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 15px;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's size */
+    z-index: -1;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.norwegian-link:hover::before {
+    background-color: var(--box-dark-color); /* Background color change on hover */
+    border-color: var(--box-border-color); /* Border color change on hover */
+}
+
+
+.campus-lead {
+    width: 551px;
+    position: relative;
+    font-size: 36px;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    font-family: Montserrat;
+    color: var(--text-color);
+    text-align: left;
+    height: 45px;
+    padding-top: 35px;
+    text-shadow: 0px 4px 30px var(--halo-color);
+}
+
+/* APIDA */
+.apida-header{
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.apida-title {
+    width: 1100px;
+    position: relative;
+    font-size: 26px;
+    text-decoration: underline;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-family: Montserrat;
+    color: var(--text-color);
+    text-align: left;
+    display: block;
+    height: 31px;
+}
+
+.apida-text{
+    margin: 0;
+}
+.apida-container {
+    width: 1230px;
+    position: relative;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    line-height: 35px;
+    text-align: left;
+    display: inline-block;
+    height: 139px;
+    color: var(--text-color);
+    font-family: Karla;
+    padding-top: 10px;
+}
+
+.apida-nav {
+    width: 100%;
+    text-align: left;
+    font-size: 24px;
+    color: var(--text-color);
+    font-family: Karla;
+}
+
+.apida-nav a {
+    position: relative;
+    display: block;
+    margin: 50px 0;
+    letter-spacing: 0.1em;
+    /* font-weight: 600; */
+    font-style: italic;
+    color: var(--text-color);
+    z-index: 1;
+}
+.apida-link::before {
+    content: '';
+    position: absolute;
+    width: 1277px;
+    height: 61px;
+    left: -25px;
+    top: -15px;
+    background-color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 15px;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's size */
+    z-index: -1;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.apida-link:hover::before {
+    background-color: var(--box-dark-color); /* Background color change on hover */
+    border-color: var(--box-border-color); /* Border color change on hover */
+}
+
+svg{
+    fill:var(--accent-color);
+    width: 55px;
+    stroke: var(--accent-color);
+    stroke-width: 2px;
+    position: relative;
+    top: 0px;
+    right: 80px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+svg:hover {
+    filter: drop-shadow(0 0 10px var(--accent-color));
+  }
+

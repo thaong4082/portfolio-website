@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(font/Montserrat-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url(font/Karla-VariableFont_wght.ttf);
+}
+
+:root{
+    --primary-color: #EFE2C5;
+    --accent-color: #272727;
+    --accent-color-2: #8A2420;
+}
+
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    /* display: flex; */
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 135px;
+}
+
+.header span{
+    color: var(--accent-color);
+    font-family: Montserrat;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 4.8px;
+}
+
+.name {
+    margin: 0;
+}
+
+.text {
+    width: 1200px;
+    position: relative;
+    font-size: 33px;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    font-family: Karla;
+    color: #8a2420;
+    text-align: left;
+    display: inline-block;
+    height: 680px;
+    padding-top: 10px;
+    padding-left: 135px;
+}
+
+svg{
+    fill:#272727;
+    width: 55px;
+    stroke: #272727;
+    stroke-width: 2px;
+    position: relative;
+    bottom: -150px;
+    right: 1280px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+svg:hover {
+    filter: drop-shadow(0 0 10px var(--accent-color-2));
+  }

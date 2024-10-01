@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(font/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(font/Montserrat-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url(font/Karla-VariableFont_wght.ttf);
+}
+
+:root{
+    --primary-color: #8A2420;
+    --accent-color: #EFE2C5;
+    --accent-color-2: #272727;
+}
+
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set body height to full viewport */
+    overflow: hidden; /* Prevent scrolling */
+    position: relative;
+}
+
+/* Thao Nguyen padding */
+.header {
+    /* display: flex; */
+    justify-content: space-between;
+    padding-top: 230px;
+    padding-left: 733px;
+    padding-right: 132px; 
+}
+
+/* Thao Nguyen customize */
+.header span{
+    color: var(--accent-color);
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 67px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 10.05px;
+}
+
+/* Navigation */
+.header_navigation a {
+    text-decoration: none;
+    display: inline-block;
+    left: 738px;
+    margin-bottom: 5px;
+    color: #F2EBE2;
+    font-family: "Karla";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.25px;
+    position: relative;
+}
+
+.pls{
+    margin: 0;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.header_navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px; /* Height of the underline */
+    width: 0;
+    background-color: var(--accent-color-2); /* Underline color */
+    transition: 0.4s ease;
+}
+
+/* Hover effect - underline expands */
+.header_navigation a:hover::after {
+    width: 100%; /* Expands underline to full width */
+}
+
+/* Little Icons */
+.links {
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-left: 738px;
+}
+.links a {
+    margin-right: 36px;
+}
+
+.box {
+    position: absolute;
+    background-color: rgba(239, 226, 197, 0);
+    border: 5px solid #efe2c5;
+    box-sizing: border-box;
+    width: 508px;
+    height: 521px;
+    top: 140px;
+    left: 106px;
+    z-index:1;
+    }
+/* The glowing effect on hover */
+.box::before {
+    content: '';
+    position: absolute;
+    top: -15px; /* Position glow slightly outside of the box */
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    background-color: rgba(239, 226, 197, 0);
+    border: 15px solid #efe2c5;
+    box-sizing: border-box;
+    filter: blur(66px);
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    z-index: -1; /* Ensure glow is behind the box */
+}
+
+/* Show the glow on hover */
+.box:hover::before {
+    opacity: 1; /* Make the glow visible on hover */
+}
+
+/* Headshot*/
+.headshot img {
+    width: 469px;
+    height: 487px;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    left: 125px;
+    bottom: 395px;
+}
